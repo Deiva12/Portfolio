@@ -357,7 +357,7 @@
       class="bg-gradient-to-r from-pink-500 to-violet-500 text-white py-6"
     >
       <div class="container mx-auto text-center">
-        <p>&copy; 2024 Deivanayagam S. All Rights Reserved. Inspired online</p>
+        <p>&copy; <p id = "currentYear"></p> Deivanayagam S. All Rights Reserved. Inspired online</p>
       </div>
       <!-- newly added -->
       <div
@@ -459,6 +459,11 @@
         </a>
       </div>
     </footer>
+      <script>
+        let today = new Date(); 
+        let fullYear = today.getFullYear(); 
+        document.getElementById("currentYear").innerHTML = "Current year: " + fullYear; 
+      </script>
   </body>
 </html>
 
